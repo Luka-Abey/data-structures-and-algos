@@ -1,6 +1,7 @@
 package com.LA.Sorting;
 
 public class InsertionSort {
+	
 	public static void insertionSort(int[] vals) {
 		int currentIndex = 0;
 		for (int pos = 1; pos < vals.length; pos++) {
@@ -13,7 +14,8 @@ public class InsertionSort {
 	}
 	
 	public static void swap(int[] arr, int i, int j) {
+		// simplest swap I could figure for lists 		
 		arr[i] = (arr[i] + arr[j]) - (arr[j] = arr[i]);
 	}
-
+	
 }
