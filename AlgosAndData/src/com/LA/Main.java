@@ -31,9 +31,7 @@ public class Main {
     list = LinkedList.insert(list, 3); 
     list = LinkedList.insert(list, 4); 
     list = LinkedList.insert(list, 5); 
-    list = LinkedList.insert(list, 6); 
-    list = LinkedList.insert(list, 7); 
-    list = LinkedList.insert(list, 8); 
+    list = LinkedList.insert(list, 6);  
 
     LinkedList.printList(list); 
 		
