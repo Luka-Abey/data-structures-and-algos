@@ -9,15 +9,13 @@ public class LinkedList {
       int data; 
       Node next; 
 
-      Node(int d) 
-      { 
+      Node(int d) { 
           data = d; 
           next = null; 
       } 
   } 
 
-  public static LinkedList insert(LinkedList list, int data) 
-  { 
+  public static LinkedList insert(LinkedList list, int data) { 
       Node new_node = new Node(data); 
       new_node.next = null; 
 
@@ -40,27 +38,12 @@ public class LinkedList {
   public static void printList(LinkedList list) { 
       Node currNode = list.head; 
  
-      System.out.print("LinkedList: "); 
+      System.out.println("\nLinked List: "); 
  
       while (currNode != null) { 
           System.out.print(currNode.data + " "); 
  
           currNode = currNode.next; 
       } 
-  } 
- 
-  public static void main(String[] args) { 
-      LinkedList list = new LinkedList(); 
-
-      list = insert(list, 1); 
-      list = insert(list, 2); 
-      list = insert(list, 3); 
-      list = insert(list, 4); 
-      list = insert(list, 5); 
-      list = insert(list, 6); 
-      list = insert(list, 7); 
-      list = insert(list, 8); 
-
-      printList(list); 
-  } 
+  }
 } 
