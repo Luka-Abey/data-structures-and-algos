@@ -8,31 +8,51 @@ import com.LA.Sorting.SelectionSort;
 public class Main {
 
 	public static void main(String[] args) {
-		int[] vals = {4,6,1,5,3,2};
-		int[] vals2 = {3,5,1,6,4,2};
-    int[] vals3 = { 5, 1, 6, 2, 3, 4 };
+		int[] vals = { 4, 6, 1, 5, 3, 2, 7, 8, 9, 10 };
+		int[] vals2 = { 3, 5, 1, 6, 4, 2, 7, 8, 9, 10 };
+    int[] vals3 = { 5, 1, 6, 2, 3, 4, 7, 8, 9, 10 };
 
-		
+    
 		System.out.println("Insertion Sort:");
-		
-		InsertionSort.insertionSort(vals);
+    long startTime = System.nanoTime();
+
+    InsertionSort.insertionSort(vals);
 		for(int i = 0; i<vals.length; i++) {
 			System.out.print(vals[i] + " ");
 		}
+
+	  long endTime = System.nanoTime();
+	  System.out.println("\nTook "+(endTime - startTime) + " ns"); 
 		
+	  
+	  
 		System.out.println("\nSelection Sort: ");
-		
+	  
+	  long startTime2 = System.nanoTime();
+
 		SelectionSort.selectionSort(vals2);
 		for(int i = 0; i<vals2.length; i++) {
 			System.out.print(vals2[i] + " ");
 		}
+
+	  long endTime2 = System.nanoTime();
+	  System.out.println("\nTook "+(endTime2 - startTime2) + " ns"); 
+		
+	  
 		
 		System.out.println("\nMerge Sort:");
-    
-    MergeSort.mergeSort(vals3, vals3.length);
+		
+		long startTime3 = System.nanoTime();
+
+		MergeSort.mergeSort(vals3, vals3.length);
     for(int i = 0; i<vals3.length; i++) {
 			System.out.print(vals3[i] + " ");
 		}
+
+	  long endTime3 = System.nanoTime();
+	  System.out.println("\nTook "+(endTime3 - startTime3) + " ns");
+		
+		
 		
 		LinkedList list = new LinkedList(); 
 
