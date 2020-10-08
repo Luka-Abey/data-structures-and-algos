@@ -13,7 +13,7 @@ public class MergeSort {
         l[i] = a[i];
     }
     for (int i = mid; i < n; i++) {
-        r[i - mid] = a[i];
+        r[i - mid] = a[i]; 
     }
     mergeSort(l, mid);
     mergeSort(r, n - mid);
