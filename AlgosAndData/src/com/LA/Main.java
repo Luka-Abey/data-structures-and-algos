@@ -4,6 +4,7 @@ import com.LA.LinkedList.LinkedList;
 import com.LA.Sorting.InsertionSort;
 import com.LA.Sorting.MergeSort;
 import com.LA.Sorting.SelectionSort;
+import com.LA.Trees.BinaryTree;
 
 public class Main {
 
@@ -63,6 +64,9 @@ public class Main {
     list = LinkedList.insert(list, 5); 
     list = LinkedList.insert(list, 6);  
 
-    LinkedList.printList(list); 		
+    LinkedList.printList(list); 	
+    
+    // binary tree
+    BinaryTree.class;
 	}
 }
