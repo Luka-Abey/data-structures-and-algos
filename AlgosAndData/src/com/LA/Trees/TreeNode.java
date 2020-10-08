@@ -13,6 +13,14 @@ public class TreeNode<E> {
 		this.right = null;
 	}
 	
-	public TreeNode<E> addLeftChild
+	public TreeNode<E> addLeftChild(E val){
+		this.left = new TreeNode<E>(val, this);
+		return this.left;
+	}
+	
+	public TreeNode<E> addRightChild(E val){
+		this.right = new TreeNode<E>(val, this);
+		return this.right;
+	}
 	
 }
