@@ -5,19 +5,7 @@ import static java.math.BigInteger.ZERO;
 import static java.math.BigInteger.ONE;
 
 public class FavSolutions {
-	
-	// 8 kyu int to binary
-	public static int toBinary(int n) {
-    String s = "";
-    while (n > 0)
-    {
-        s =  ( (n % 2 ) == 0 ? "0" : "1") +s;
-        n = n / 2;
-    }
-    return Integer.parseInt(s);
-  }
-	
-	
+		
 	// 6 kyu sum of all the digits until one digit left !
 	public static int digital_root(int n) {
     if (n == 0) { 
@@ -70,14 +58,25 @@ public class FavSolutions {
 		return sum.multiply(BigInteger.valueOf(4));
 	 } 
 	 
-	 
 	 // 6 kyu find int occurring odd number of times 
+	 
 	 public static int findIt(int[] A) {
 	    int xor = 0;
 	    for (int i = 0; i < A.length; i++) {
 	      xor ^= A[i];
 	    }
 	    return xor;
+	  }
+	 
+	 // 8 kyu int to binary
+		public static int toBinary(int n) {
+	    String s = "";
+	    while (n > 0)
+	    {
+	        s =  ( (n % 2 ) == 0 ? "0" : "1") +s;
+	        n = n / 2;
+	    }
+	    return Integer.parseInt(s);
 	  }
 
 }
