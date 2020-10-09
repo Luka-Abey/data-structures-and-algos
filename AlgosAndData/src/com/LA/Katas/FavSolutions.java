@@ -59,7 +59,9 @@ public class FavSolutions {
 	 } 
 	 
 	 // 6 kyu find int occurring odd number of times 
-	 
+	 // if XOR used and both sides are the same (ie even), returns 0. 
+	 // same if both false. If any only if one side is true, returns 1.
+	 // ie xor is X-clusively OR
 	 public static int findIt(int[] A) {
 	    int xor = 0;
 	    for (int i = 0; i < A.length; i++) {
