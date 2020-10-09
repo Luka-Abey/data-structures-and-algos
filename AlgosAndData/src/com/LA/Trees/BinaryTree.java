@@ -18,6 +18,18 @@ public class BinaryTree<E> {
 		 }
 	 }
  }
+ 
+ private void preOrder() {
+	 if(node != null) {
+		 node.visit();
+		 preOrder(node.getLeftChild());
+		 preOrder(node.getRightChild());
+	 }
+ }
+ 
+ public void preOrder() {
+	 this.preOrder(root);
+ }
 }
 
 
