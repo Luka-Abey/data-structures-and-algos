@@ -7,7 +7,7 @@ public class BinaryTree<E> {
  TreeNode<E> root;
  
  public void levelOrder() {
-	 Queue <TreeNode<E>> = new LinkedList <TreeNode<E>>();
+	 Queue <TreeNode<E>> q = new LinkedList <TreeNode<E>>();
 	 q.add(root);
 	 while(!q.isEmpty()) {
 		 TreeNode<E> curr = q.remove();
