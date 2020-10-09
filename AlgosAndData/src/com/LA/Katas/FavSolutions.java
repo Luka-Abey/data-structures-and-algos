@@ -1,5 +1,9 @@
 package com.LA.Katas;
 
+import java.math.BigInteger;
+import static java.math.BigInteger.ZERO;
+import static java.math.BigInteger.ONE;
+
 public class FavSolutions {
 	
 	// 8 kyu int to binary
@@ -24,7 +28,8 @@ public class FavSolutions {
     }
   }  
 	
-	
+	// checking if num is a triangle number in set A = {1, 3, 6, 10, 15 etc}
+	// formula for such a number is (n*(n+1))/2 = member of A
 	 public static Boolean isTriangleNumber(long num) { 
 	    if (num < 0) 
 	      return false; 
@@ -38,5 +43,31 @@ public class FavSolutions {
 	    }
 	    return false;
 	    } 
+	 
+	 // 6 kyu prime number check
+	 public static boolean isPrime(int num) {
+	    if(num < 2) return false;
+	    if(num == 2 || num == 3) return true;
+	    if(num%2 == 0 || num%3 == 0) return false;
+	    long sqrtN = (long)Math.sqrt(num)+1;
+	    for(long i = 6L; i <= sqrtN; i += 6) {
+	        if(num%(i-1) == 0 || num%(i+1) == 0) return false;
+	    }
+	    return true;
+	  }
+	 
+	 // 5 kyu sum of perimeters of all squares in a rectangle
+	 // learnt about BigInteger
+	 public static BigInteger perimeter(BigInteger n){ 
+    BigInteger a = ZERO, b = ONE, c = ONE;
+		BigInteger sum = BigInteger.valueOf(0);
+			for (int i = 1; i <= n.intValue()+1; i++) {
+				a = b; 
+				b = c; 
+				c = a.add(b);
+				sum = sum.add(a);
+			}
+		return sum.multiply(BigInteger.valueOf(4));
+	 } 
 
 }
