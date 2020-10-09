@@ -28,7 +28,7 @@ public class FavSolutions {
     }
   }  
 	
-	// checking if num is a triangle number in set A = {1, 3, 6, 10, 15 etc}
+	// 6 kyu checking if num is a triangle number in set A = {1, 3, 6, 10, 15 etc}
 	// formula for such a number is (n*(n+1))/2 = member of A
 	 public static Boolean isTriangleNumber(long num) { 
 	    if (num < 0) 
@@ -69,5 +69,15 @@ public class FavSolutions {
 			}
 		return sum.multiply(BigInteger.valueOf(4));
 	 } 
+	 
+	 
+	 // 6 kyu find int occurring odd number of times 
+	 public static int findIt(int[] A) {
+	    int xor = 0;
+	    for (int i = 0; i < A.length; i++) {
+	      xor ^= A[i];
+	    }
+	    return xor;
+	  }
 
 }
