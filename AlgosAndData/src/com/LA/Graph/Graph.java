@@ -9,13 +9,26 @@ public abstract class Graph {
 		numEdges = 0;
 	}
 	
+	public void addVertex() {
+		implementAddVertex();
+		numVertices ++;
+	}
+	
+	public abstract void implementAddVertex() {
+		
+	}
+	
+	public abstract List<Integer> getNeighbours(int v); 
+	
+	
+	
+	
+	
 	public int getNumVertices() {
 		return numVertices;
 	}
 	
 	public int getNumEdges() {
 		return numEdges;
-	}
-	
-	
+	}	
 }
