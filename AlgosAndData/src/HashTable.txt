@@ -1,3 +1,11 @@
 Hash tables are arrays where we translate and assign values to an index.
 
+Key -> (Hash) Function -> Hash code (index)
+The function is, more often than not, a modulo operator with value.
+
+What if we have two keys,
+3, and 13, and our function is X mod 5...
+Hash code for both would be 3..
+This is known as a collision
+
 How do we deal with collisions? 
