@@ -1,1 +1,3 @@
+Hash tables are arrays where we translate and assign values to an index.
+
 How do we deal with collisions? 
