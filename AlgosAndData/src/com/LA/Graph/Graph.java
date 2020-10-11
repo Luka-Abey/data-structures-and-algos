@@ -1,5 +1,7 @@
 package com.LA.Graph;
 
+import java.util.List;
+
 public abstract class Graph {
 	private int numVertices;
 	private int numEdges;
