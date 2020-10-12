@@ -4,6 +4,7 @@ Hash tables are arrays where we translate and assign keys to values.
 
 Key -> (Hash) Function -> Hash code (index)
 The function is, more often than not, a modulo operator with value.
+To hash characters, we use ASCII and then pass this value through the function.
 
 What if we have two keys,
 3, and 13, and our function is X % 5...
