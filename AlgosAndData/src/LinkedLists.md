@@ -1,1 +1,1 @@
-Split into two instantiations : singly and doubly linked lists. Single is one-way, as each node refers to a single, 'next' node, and double is
+Split into two instantiations : singly and doubly linked lists. Single is one-way, as each node refers to a single, 'next' node. Double is two ways, with references stored for next and 
