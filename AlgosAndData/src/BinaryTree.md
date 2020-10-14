@@ -9,4 +9,4 @@ Stanford says binary trees have an elegant recursive pointer structure. The recu
 
 ### Binary SEARCH tree
 
-Also known as an ordered binary tree, where the nodes are arranged in order. Elements in the left subtree of a given node are <= given node, and elements in the right subtree
+Also known as an ordered binary tree, where the nodes are arranged in order. Elements in the left subtree of a given node are <= given node, and elements in the right subtree are > given node.
