@@ -1,0 +1,1 @@
+A tree whose elements have no more than two children - 
