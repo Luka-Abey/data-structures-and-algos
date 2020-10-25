@@ -1,0 +1,1 @@
+Vector implements List. Yet, vectors were present in JDK 1.0, and List was introduced in 1.2 - later vectors were modified to work with List.
